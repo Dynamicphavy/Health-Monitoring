@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Health Monitoring</title>
+</head>
+<body>
+    <div class="main">
+        <h1>HEALTH MONITORING</h1>
+        <div class="vital">
+            <div class="vit">
+                <!-- Heart Rate -->
+                <div class="vit1" id="PRCard">
+                    <h3>Pulse Rate (BPM)</h3>
+                    <span id="PR">0</span>
+                </div>
+
+                <!-- Temperature -->
+                <div class="vit1" id="TempCard">
+                    <h3>Body Temperature (C)</h3>
+                    <span id="Temp">0</span>
+                </div>
+            </div>
+
+            <div class="vit">
+                <!-- SPO2 -->
+                <div class="vit1" id="SPO2Card">
+                    <h3>Blood Oxygen Levels (%)</h3>
+                    <span id="SPO2">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="vital">
+            <!-- Heart Rate Spikes -->
+            <div class="spike">
+                <canvas id="hrChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <button id="logout">Logout</button>
+        <button id="export-btn" style="color: red; display: none;">Export PDF</button>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Firebase and EmailJS credentials
+config.js
+
+# Arduino credentials
+hardware/secrets.h
+
+# Git zone identifier files
+*.Zone.Identifier

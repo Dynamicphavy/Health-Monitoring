@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+<body>
+    <h1 style="font-weight: 500;">HEALTH MONITORING</h1>
+    <div class="container">
+        <div class="form">
+            <h1 style="font-weight: 500; color: #000;">Log In</h1>
+            <div class="input">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="Email" id="email" required>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" id="password" required>
+            </div>
+            <p id="msg" style="color: red; font-size: 0.65rem;"></p>
+            <button id="submit" type="submit">Login</button>
+            <div class="links">
+                <p>Creat a new account? <a href="sig.html">Sign Up</a></p>
+                <p>Forgotten Password? <a href="res.html">Click Here</a> to reset</p>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="log.js" defer></script>
+</body>
+</html>
